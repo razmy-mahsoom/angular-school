@@ -19,6 +19,7 @@ import { HomeComponent } from './dashboard/home/home.component';
 import { GradesComponent } from './dashboard/grade-main/grade-add/grades/grades.component';
 import { GradeComponent } from './dashboard/grade-main/grade-add/grades/grade/grade.component';
 import {GradeService} from "./dashboard/grade-main/grade.service";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -44,7 +45,8 @@ import {GradeService} from "./dashboard/grade-main/grade.service";
     MatBadgeModule,
     MatProgressSpinnerModule,
     FontAwesomeModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
 
   ],
   providers: [
