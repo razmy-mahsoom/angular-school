@@ -1,0 +1,16 @@
+<div class="card bg-success">
+  <div class="card-body">
+    <div class="row">
+      <div class="col">
+        <p>Grade Name</p>
+      </div>
+      <div class="col">
+        <p>Grade Description</p>
+      </div>
+      <div class="col">
+        <p>No of Students</p>
+      </div>
+    </div>
+  </div>
+</div>
+<app-grade *ngFor="let grade of grades" [grade]="grade"></app-grade>
