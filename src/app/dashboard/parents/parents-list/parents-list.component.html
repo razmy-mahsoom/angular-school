@@ -1,1 +1,46 @@
-<p>parents-list works!</p>
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-1">
+            <button class="btn btn-sm btn-outline-danger" (click)="onBack()">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+          </div>
+          <div class="col"><h5>Parents</h5></div>
+        </div>
+
+      </div>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">NIC No #</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Contact No</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let parent of parents">
+          <th scope="row">{{parent.nicNo}}</th>
+          <td>{{parent.fullName}}</td>
+          <td>{{parent.email}}</td>
+          <td>{{parent.contactNo1}}</td>
+          <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button class="btn btn-sm btn-outline-primary" title="view"><i class="fa-solid fa-binoculars"></i></button>
+              <button class="btn btn-sm btn-outline-success" title="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+            </div>
+
+          </td>
+        </tr>
+
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

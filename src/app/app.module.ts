@@ -23,6 +23,7 @@ import {FormsModule} from "@angular/forms";
 import { ParentsComponent } from './dashboard/parents/parents.component';
 import { ParentsAddComponent } from './dashboard/parents/parents-add/parents-add.component';
 import { ParentsListComponent } from './dashboard/parents/parents-list/parents-list.component';
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 
 
@@ -52,7 +53,8 @@ import { ParentsListComponent } from './dashboard/parents/parents-list/parents-l
     MatProgressSpinnerModule,
     FontAwesomeModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    MatTooltipModule
 
   ],
   providers: [
