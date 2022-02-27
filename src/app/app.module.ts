@@ -20,6 +20,9 @@ import { GradesComponent } from './dashboard/grade-main/grade-add/grades/grades.
 import { GradeComponent } from './dashboard/grade-main/grade-add/grades/grade/grade.component';
 import {GradeService} from "./dashboard/grade-main/grade.service";
 import {FormsModule} from "@angular/forms";
+import { ParentsComponent } from './dashboard/parents/parents.component';
+import { ParentsAddComponent } from './dashboard/parents/parents-add/parents-add.component';
+import { ParentsListComponent } from './dashboard/parents/parents-list/parents-list.component';
 
 
 
@@ -35,6 +38,9 @@ import {FormsModule} from "@angular/forms";
     HomeComponent,
     GradesComponent,
     GradeComponent,
+    ParentsComponent,
+    ParentsAddComponent,
+    ParentsListComponent,
 
   ],
   imports: [

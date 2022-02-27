@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="card">
+    <div class="card-header">Register Parents</div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col form-group">
+          <label for="name">Full Name</label>
+          <input class="form-control" type="text" id="name" #name >
+        </div>
+        <div class="col form-group">
+          <label for="nic">NIC Number</label>
+          <input class="form-control" type="text" id="nic" #nic>
+        </div>
+        <div class="col form-group">
+          <label for="email">Email</label>
+          <input class="form-control" type="email" min="1" max="100" id="email" #email>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col form-group">
+          <label for="password">Password</label>
+          <input class="form-control" type="password" min="1" max="100" id="password" #password>
+        </div>
+        <div class="col form-group">
+          <label for="contact1">Contact No 1</label>
+          <input class="form-control" type="number" min="1" max="100" id="contact1" #contact1 required>
+        </div>
+        <div class="col form-group">
+          <label for="contact2">Contact No 2</label>
+          <input class="form-control" type="number" min="1" max="100" id="contact2" #contact2 required>
+        </div>
+        <div class="col form-group">
+          <label for="contact3">Contact No 3</label>
+          <input class="form-control" type="number" min="1" max="100" id="contact3" #contact3 required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col form-group">
+          <label for="address">Address</label>
+          <textarea name="address" id="address" cols="80" rows="5" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary" ><i class="fa-solid fa-floppy-disk"></i> Save</button>
+            <button type="button" class="btn btn-danger"><i class="fa-solid fa-ban"></i> Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
