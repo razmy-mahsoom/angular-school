@@ -5,4 +5,5 @@
 @import "~mdb-ui-kit/css/mdb.min.css";
 body {
   padding: 20px;
+  background-color: gainsboro;
 }

@@ -24,6 +24,9 @@ import { ParentsComponent } from './dashboard/parents/parents.component';
 import { ParentsAddComponent } from './dashboard/parents/parents-add/parents-add.component';
 import { ParentsListComponent } from './dashboard/parents/parents-list/parents-list.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { SmsComponent } from './dashboard/sms/sms.component';
+import { SubjectsComponent } from './dashboard/subjects/subjects.component';
+import { SubjectListComponent } from './dashboard/subjects/subject-list/subject-list.component';
 
 
 
@@ -42,6 +45,9 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     ParentsComponent,
     ParentsAddComponent,
     ParentsListComponent,
+    SmsComponent,
+    SubjectsComponent,
+    SubjectListComponent,
 
   ],
   imports: [

@@ -7,6 +7,8 @@ import {HomeComponent} from "./dashboard/home/home.component";
 import {ParentsComponent} from "./dashboard/parents/parents.component";
 import {ParentsAddComponent} from "./dashboard/parents/parents-add/parents-add.component";
 import {ParentsListComponent} from "./dashboard/parents/parents-list/parents-list.component";
+import {SmsComponent} from "./dashboard/sms/sms.component";
+import {SubjectsComponent} from "./dashboard/subjects/subjects.component";
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -16,9 +18,12 @@ const routes: Routes = [
       {path:'parents',component:ParentsComponent, children:[
           {path:'',component:ParentsAddComponent},
           {path:'parents-list',component:ParentsListComponent}
-        ]}
+        ]},
+      {path:'sms',component:SmsComponent},
+      {path:'subjects',component:SubjectsComponent}
 
     ]},
+
 ];
 
 @NgModule({
