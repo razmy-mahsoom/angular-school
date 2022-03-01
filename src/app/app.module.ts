@@ -27,6 +27,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import { SmsComponent } from './dashboard/sms/sms.component';
 import { SubjectsComponent } from './dashboard/subjects/subjects.component';
 import { SubjectListComponent } from './dashboard/subjects/subject-list/subject-list.component';
+import { StudentsComponent } from './dashboard/students/students.component';
 
 
 
@@ -48,6 +49,7 @@ import { SubjectListComponent } from './dashboard/subjects/subject-list/subject-
     SmsComponent,
     SubjectsComponent,
     SubjectListComponent,
+    StudentsComponent,
 
   ],
   imports: [
