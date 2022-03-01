@@ -1,1 +1,12 @@
-<p>students works!</p>
+<div class="row">
+  <div class="col-2">
+    <div class="card">
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item"><button class="btn btn-outline-success" (click)="onViewStudent()">View Students</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col">
+    <router-outlet></router-outlet>
+  </div>
+</div>

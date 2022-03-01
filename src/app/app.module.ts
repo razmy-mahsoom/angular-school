@@ -28,6 +28,8 @@ import { SmsComponent } from './dashboard/sms/sms.component';
 import { SubjectsComponent } from './dashboard/subjects/subjects.component';
 import { SubjectListComponent } from './dashboard/subjects/subject-list/subject-list.component';
 import { StudentsComponent } from './dashboard/students/students.component';
+import { StudentAddComponent } from './dashboard/students/student-add/student-add.component';
+import { StudentListComponent } from './dashboard/students/student-list/student-list.component';
 
 
 
@@ -50,6 +52,8 @@ import { StudentsComponent } from './dashboard/students/students.component';
     SubjectsComponent,
     SubjectListComponent,
     StudentsComponent,
+    StudentAddComponent,
+    StudentListComponent,
 
   ],
   imports: [

@@ -9,6 +9,9 @@ import {ParentsAddComponent} from "./dashboard/parents/parents-add/parents-add.c
 import {ParentsListComponent} from "./dashboard/parents/parents-list/parents-list.component";
 import {SmsComponent} from "./dashboard/sms/sms.component";
 import {SubjectsComponent} from "./dashboard/subjects/subjects.component";
+import {StudentsComponent} from "./dashboard/students/students.component";
+import {StudentAddComponent} from "./dashboard/students/student-add/student-add.component";
+import {StudentListComponent} from "./dashboard/students/student-list/student-list.component";
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -20,7 +23,11 @@ const routes: Routes = [
           {path:'parents-list',component:ParentsListComponent}
         ]},
       {path:'sms',component:SmsComponent},
-      {path:'subjects',component:SubjectsComponent}
+      {path:'subjects',component:SubjectsComponent},
+      {path:'students',component:StudentsComponent, children:[
+          {path: '',component: StudentAddComponent},
+          {path: 'student-list',component: StudentListComponent}
+        ]}
 
     ]},
 
