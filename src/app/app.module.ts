@@ -30,6 +30,7 @@ import { SubjectListComponent } from './dashboard/subjects/subject-list/subject-
 import { StudentsComponent } from './dashboard/students/students.component';
 import { StudentAddComponent } from './dashboard/students/student-add/student-add.component';
 import { StudentListComponent } from './dashboard/students/student-list/student-list.component';
+import { PaymentsComponent } from './dashboard/payments/payments.component';
 
 
 
@@ -54,6 +55,7 @@ import { StudentListComponent } from './dashboard/students/student-list/student-
     StudentsComponent,
     StudentAddComponent,
     StudentListComponent,
+    PaymentsComponent,
 
   ],
   imports: [

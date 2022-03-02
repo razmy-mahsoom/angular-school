@@ -12,6 +12,7 @@ import {SubjectsComponent} from "./dashboard/subjects/subjects.component";
 import {StudentsComponent} from "./dashboard/students/students.component";
 import {StudentAddComponent} from "./dashboard/students/student-add/student-add.component";
 import {StudentListComponent} from "./dashboard/students/student-list/student-list.component";
+import {PaymentsComponent} from "./dashboard/payments/payments.component";
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -27,7 +28,9 @@ const routes: Routes = [
       {path:'students',component:StudentsComponent, children:[
           {path: '',component: StudentAddComponent},
           {path: 'student-list',component: StudentListComponent}
-        ]}
+        ]},
+      {path:'payments',component:PaymentsComponent}
+
 
     ]},
 

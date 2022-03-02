@@ -1,1 +1,51 @@
-<p>student-list works!</p>
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-1">
+            <button class="btn btn-sm btn-outline-danger" >
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+          </div>
+          <div class="col"><h5>Students</h5></div>
+        </div>
+
+      </div>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">Reg No#</th>
+          <th scope="col">Admin No#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Parent</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Class</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let student of students">
+          <th scope="row">{{student.adminNo}}</th>
+          <td>{{student.fullName}}</td>
+          <td>{{student.email}}</td>
+          <td>{{student.contactNo}}</td>
+          <td>{{student.contactNo}}</td>
+          <td>{{student.contactNo}}</td>
+          <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button class="btn btn-sm btn-outline-success" title="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button class="btn btn-sm btn-outline-primary" title="delete"><i class="fa-solid fa-trash-can"></i></button>
+              <button class="btn btn-sm btn-outline-primary" title="payment" (click)="onPayment()"><i class="fa-solid fa-landmark"></i></button>
+            </div>
+
+          </td>
+        </tr>
+
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
